@@ -1,0 +1,25 @@
+{
+  "name": "risingdoughnode3",
+  "version": "1.0.0",
+  "description": "node crash course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexWaller1/risingDoughNode3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexWaller1/risingDoughNode3/issues"
+  },
+  "homepage": "https://github.com/AlexWaller1/risingDoughNode3#readme",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
