@@ -56,3 +56,60 @@ console.log(path.parse(__filename).ext);
 
 console.log(path.parse(__filename).name);
 // pathPractice
+
+// Concatenate paths
+console.log(path.join(__dirname, "test", "hello.html"));
+// /Users/alexwaller/codeMentorPractice/risingDoughNode3/reference/test/hello.html
+
+const mellonTechPath = path.join(__dirname, "robots", "mellonTech.js");
+
+console.log(mellonTechPath);
+// /Users/alexwaller/codeMentorPractice/risingDoughNode3/reference/robots/mellonTech.js
+
+console.log(path.dirname(mellonTechPath));
+// /Users/alexwaller/codeMentorPractice/risingDoughNode3/reference/robots
+
+console.log(path.parse(mellonTechPath));
+/* 
+
+{
+    root: '/',
+    dir: '/Users/alexwaller/codeMentorPractice/risingDoughNode3/reference/robots',
+    base: 'mellonTech.js',
+    ext: '.js',
+    name: 'mellonTech'
+}
+
+*/
+
+console.log(path.parse(mellonTechPath).root);
+// /
+
+console.log(path.parse(mellonTechPath).dir);
+// /Users/alexwaller/codeMentorPractice/risingDoughNode3/reference/robots
+
+console.log(path.dirname(mellonTechPath));
+// /Users/alexwaller/codeMentorPractice/risingDoughNode3/reference/robots
+
+console.log(path.parse(mellonTechPath).base);
+// mellonTech.js
+
+console.log(path.parse(mellonTechPath).ext);
+// .js
+
+console.log(path.parse(mellonTechPath).name);
+// mellonTech
+
+console.log(typeof path.parse(mellonTechPath).name == "string");
+// string
+
+console.log(typeof path.parse(mellonTechPath).ext);
+// string
+
+const hank44Path = path.join(__dirname, "robot", "hank_44.css");
+
+console.log(hank44Path);
+// /Users/alexwaller/codeMentorPractice/risingDoughNode3/reference/robot/hank_44.js
+
+console.log(path.dirname(hank44Path));
+// /Users/alexwaller/codeMentorPractice/risingDoughNode3/reference/robot
