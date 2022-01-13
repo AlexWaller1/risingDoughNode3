@@ -81,3 +81,26 @@ console.log(path.parse(hammerHead).base);
 // hammerHead.js
 
 console.log(__filename);
+
+console.log(__dirname);
+
+const robots = ["Hank-44", "Warren-21", "Mellon-Tech", "Eggplant-Head"];
+
+console.log(robots[2]);
+// Mellon-Tech
+
+console.log(typeof path.parse(hammerHead).ext == typeof robots[2]);
+// true
+
+const risingDough = ["Rising Dough", "Timber_I0 34"];
+
+fs.writeFile(path.join(__dirname, "/pizza.txt"), "Pizza is Great!\n", err => {
+  if (err) throw err;
+  console.log("pizzaCool");
+});
+// writeFile will make the file as well
+
+fs.appendFile(path.join(__dirname, "/pizza.txt"), "Rising Dough", err => {
+  if (err) throw err;
+  console.log("Rising Dough!");
+});
