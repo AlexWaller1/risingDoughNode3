@@ -182,3 +182,11 @@ console.log(extensionType(mellonTechPath));
 
 console.log(extensionType(hank44Path));
 // hank_44 has a css extension
+
+console.log(Object.keys(hank44Path));
+
+console.log(Object.keys(path.parse(hank44Path)));
+// ['root', 'dir', 'base', 'ext', 'name']
+
+console.log(Object.keys(path.parse(hank44Path))[1]);
+// dir
