@@ -47,3 +47,12 @@ console.log(path.parse(__filename).dir);
 
 console.log(__dirname);
 // /Users/ alexwaller/codeMentorPractice/risingDoughNode3/reference
+
+console.log(path.parse(__filename).base);
+// pathPractice.js
+
+console.log(path.parse(__filename).ext);
+// .js
+
+console.log(path.parse(__filename).name);
+// pathPractice
